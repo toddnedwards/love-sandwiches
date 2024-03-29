@@ -66,8 +66,9 @@ def calculate_surplus_data(sales_row):
     - Negative surplus indicates extra made when stock was sold out.
     """
     print("Calculating surplus data...\n")
-    stock = SHEET.worksheet("Stock").get_all_values()
-    pprint(stock)
+    stock = SHEET.worksheet("stock").get_all_values()
+    stock_row = stock[-1]
+    print(stock_row)
 
 def main():
     """
